@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>املاک قصر گلشهر | زنجان</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="home">
+
+<header class="topbar">
+  <div class="brand">
+    <img src="logo.png" alt="املاک قصر گلشهر">
+    <div><strong>قصر گلشهر</strong><small>املاک زنجان</small></div>
+  </div>
+  <a class="call" href="tel:09104784166">☎</a>
+</header>
+
+<section class="quick-cats">
+  <a href="#properties"><span>🏠</span><b>آپارتمان</b></a>
+  <a href="#properties"><span>🏡</span><b>ویلایی</b></a>
+  <a href="#properties"><span>🌳</span><b>زمین</b></a>
+  <a href="#properties"><span>🏪</span><b>مغازه</b></a>
+  <a href="#contact"><span>🤝</span><b>مشاوره</b></a>
+</section>
+
+<main>
+<section class="search-wrap">
+  <div class="search">
+    <span>⌕</span>
+    <input id="quickSearch" placeholder="جستجو در فایل‌های املاک قصر گلشهر">
+    <button onclick="filterQuick()">جستجو</button>
+  </div>
+  <div class="location-row"><span>📍</span> زنجان، گلشهر <span class="all">همه فایل‌ها⌄</span></div>
+</section>
+
+<section class="hero-banner">
+  <div class="banner-copy">
+    <small>املاک قصر گلشهر</small>
+    <h1>خانه‌ای که<br><em>دوستش داری</em></h1>
+    <p>خرید، فروش و رهن و اجاره ملک در زنجان</p>
+    <a href="#properties">مشاهده فایل‌ها</a>
+  </div>
+  <div class="banner-house">🏠</div>
+</section>
+
+<section class="mini-services">
+  <a href="#properties"><i>🏠</i><b>خرید و فروش</b><small>فایل‌های منتخب</small></a>
+  <a href="#properties"><i>🔑</i><b>رهن و اجاره</b><small>قیمت مناسب</small></a>
+  <a href="#contact"><i>💎</i><b>کارشناسی ملک</b><small>مشاوره تخصصی</small></a>
+  <a href="#contact"><i>📞</i><b>تماس با ما</b><small>پاسخگویی سریع</small></a>
+</section>
+
+<section id="properties" class="properties">
+  <div class="section-title">
+    <div><span>فایل‌های جدید</span><h2>ملک‌های پیشنهادی</h2></div>
+    <button id="showAll">مشاهده همه ←</button>
+  </div>
+  <div class="filters">
+    <button class="active" data-filter="all">همه</button>
+    <button data-filter="sale">فروش</button>
+    <button data-filter="rent">رهن و اجاره</button>
+    <button data-filter="villa">ویلایی</button>
+    <button data-filter="land">زمین</button>
+  </div>
+  <div id="propertyGrid" class="property-grid"></div>
+  <p id="empty" class="empty hidden">فایلی با این مشخصات پیدا نشد.</p>
+</section>
+
+<section class="gold-strip">
+  <div><b>ویژه‌های قصر گلشهر</b><small>فایل‌های خاص با قیمت مناسب</small></div>
+  <span>مشاهده همه ←</span>
+</section>
+
+<section class="featured">
+  <article>
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=85">
+    <div><b>ویلای لوکس و خوش‌نقشه</b><small>گلشهر زنجان • ۲۵۰ متر</small></div>
+  </article>
+  <article>
+    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85">
+    <div><b>آپارتمان مدرن</b><small>گلشهر • ۱۱۰ متر • ۲ خواب</small></div>
+  </article>
+  <article>
+    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=85">
+    <div><b>آپارتمان خوش‌قیمت</b><small>گلشهر • ۸۵ متر • ۲ خواب</small></div>
+  </article>
+</section>
+
+<section id="contact" class="contact">
+  <div>
+    <span>املاک قصر گلشهر</span>
+    <h2>ملک مناسب خودت را پیدا کن</h2>
+    <p>برای خرید، فروش، رهن و اجاره با ما تماس بگیر.</p>
+  </div>
+  <div class="contact-buttons">
+    <a href="tel:09104784166">📞 تماس با مشاور</a>
+    <a href="https://wa.me/989104784166" target="_blank" rel="noopener noreferrer">💬 واتساپ</a>
+    <a href="https://www.instagram.com/ghasre_golshahr/" target="_blank" rel="noopener noreferrer">◎ اینستاگرام</a>
+  </div>
+</section>
+</main>
+
+<nav class="bottom-nav">
+  <a class="active" href="#home" onclick="window.scrollTo({top:0,behavior:'smooth'})"><span>⌂</span><b>خانه</b></a>
+  <a href="#properties"><span>⌕</span><b>جستجو</b></a>
+  <a href="#properties"><span>🏠</span><b>ملک‌ها</b></a>
+  <a href="#contact"><span>♡</span><b>مشاوره</b></a>
+  <a href="tel:09104784166"><span>☎</span><b>تماس</b></a>
+</nav>
+
+<script src="script.js" defer></script>
+</body>
+</html>
